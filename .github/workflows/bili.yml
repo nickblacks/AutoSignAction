@@ -28,7 +28,7 @@ jobs:
       - uses: ./.github/action/cache-data
       - name: 启动签到
         env:
-          MULTI: ${{ vars.MULTI }}
+          MULTI: ${{ secrets.MULTI }}
           PUSH: ${{ secrets.PUSH  }}
           BILIBILI_COOKIE: ${{ secrets.BILIBILI_COOKIE  }}
           EMAIL_SMTP_SERVER: ${{ secrets.EMAIL_SMTP_SERVER }}
