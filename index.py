@@ -46,6 +46,10 @@ def parse_message(message, push_type):
 
 
 def pushMessage(message, config):
+
+    if not config:
+        info("未配置 PUSH，跳过消息推送")
+        return
     if isinstance(config, list):
         for item in config:
             t = item.get("type")
@@ -62,7 +66,7 @@ def pushMessage(message, config):
 def bilibiliJob(*args):
     start_time = time.time()
     accounts = json.loads(os.environ.get("MULTI", default="{}"), strict=False)
-    push_together = json.loads(os.environ.get("PUSH", default="{}"), strict=False)
+    push_together = json.loads(os.environ.get("PUSH") or "{}", strict=False)
     cookie= os.environ.get("BILIBILI_COOKIE", default="{}")
 
     all_results = []
