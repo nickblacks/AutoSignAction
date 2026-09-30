@@ -1,9 +1,10 @@
-bilibil 登录信息  BILIBILI_COOKIE
+bilibil 登录信息Settings → Secrets and variables → Actions → Secrets 设置  BILIBILI_COOKIE
 
 <img width="1340" height="802" alt="1a85218e967226b1073cd37090141797" src="https://github.com/user-attachments/assets/d0203866-7fb4-47b5-9f78-1ee1e1fba365" />
 
 ``` json
-bilibil 还有一个环境变量 MULTI    值是 [
+bilibil 还有一个Settings → Secrets and variables → Actions → Secrets 设置 MULTI ，下面为值：
+[
     {
  "options": {
             "watch": 1,  # 每日观看视频
