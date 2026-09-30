@@ -37,4 +37,5 @@ jobs:
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
           EMAIL_RECIPIENT: ${{ secrets.EMAIL_RECIPIENT }}
         run: |
+          echo "MULTI length: ${#MULTI}"
           python3 index.py
