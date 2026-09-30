@@ -18,6 +18,23 @@ bilibil 还有一个Settings → Secrets and variables → Actions → Secrets �
     }
 ]
 
+需要去除 # 后面的，直接用：
+
+[
+    {
+        "options": {
+            "watch": 1,
+            "coins": 0,
+            "share": 1,
+            "comics": 1,
+            "lb": 1,
+            "threshold": 100,
+            "toCoin": 1
+        }
+    }
+]
+
+
 ```
 
 COOKIE_QUARK  登录信息
